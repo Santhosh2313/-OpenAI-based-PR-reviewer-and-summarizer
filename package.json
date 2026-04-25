@@ -5,6 +5,7 @@
   "type": "module",
   "description": "OpenAI-based PR Reviewer and Summarizer.",
   "main": "lib/main.js",
+  "author": "Santhosh2313",
   "scripts": {
     "build": "tsc",
     "package": "ncc build --license licenses.txt",
@@ -17,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fluxninja/openai-pr-reviewer.git"
+    "url": "git+https://github.com/Santhosh2313/-OpenAI-based-PR-reviewer-and-summarizer.git"
   },
   "keywords": [
     "actions",

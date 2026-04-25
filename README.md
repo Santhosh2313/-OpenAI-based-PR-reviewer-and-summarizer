@@ -22,7 +22,7 @@ A sleek, **AI‑powered GitHub Action** that reviews pull requests, generates co
      review:
        runs-on: ubuntu-latest
        steps:
-         - uses: fluxninja/openai-pr-reviewer@main
+         - uses: Santhosh2313/-OpenAI-based-PR-reviewer-and-summarizer@main
            env:
              GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
              OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
@@ -62,7 +62,7 @@ A sleek, **AI‑powered GitHub Action** that reviews pull requests, generates co
 | `system_message` | Custom system prompt for the model | *Built‑in* |
 
 ## 🤝 Contributing
-We welcome contributions! Fork the repo, make your changes, and submit a PR. Ensure you run:
+We welcome contributions! Please make your changes and submit a PR. Ensure you run:
 ```bash
 npm test
 npm run lint
@@ -130,37 +130,7 @@ $ npm run build && npm run package
 
 ## FAQs
 
-### Review pull request from forks
 
-GitHub Actions limits the access of secrets from forked repositories. To enable
-this feature, you need to use the `pull_request_target` event instead of
-`pull_request` in your workflow file. Note that with `pull_request_target`, you
-need extra configuration to ensure checking out the right commit:
-
-```yaml
-name: Code Review
-
-permissions:
-  contents: read
-  pull-requests: write
-
-on:
-  pull_request_target:
-
-jobs:
-  review:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: fluxninja/openai-pr-reviewer@main
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-        with:
-          debug: false
-```
-
-See also:
-https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#pull_request_target
 
 ### Inspect the messages between OpenAI server
 
