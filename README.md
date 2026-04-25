@@ -56,12 +56,7 @@ A sleek, **AI‑powered GitHub Action** that reviews pull requests, generates co
 | `temperature` | Sampling temperature for GPT | `0.2` |
 | `system_message` | Custom system prompt for the model | *Built‑in* |
 
-## 🤝 Contributing
-We welcome contributions! Please make your changes and submit a PR. Ensure you run:
-```bash
-npm test
-npm run lint
-```
+
 You can reply to a review comment made by this action and get a response based
 on the diff context. Additionally, you can invite the bot to a conversation by
 mentioning it in the beginning of the comment with `@openai`.
