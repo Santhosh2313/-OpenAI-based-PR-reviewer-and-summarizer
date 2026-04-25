@@ -45,12 +45,7 @@ A sleek, **AI‑powered GitHub Action** that reviews pull requests, generates co
 - Adjust `max_files` to limit the number of files examined (set to `0` for unlimited).
 - Use `temperature` to control answer creativity (default `0.2`).
 
-## 🎨 Screenshots
-> *(Replace the placeholders with your own images)*
 
-![PR Summary](./docs/images/openai-pr-summary.png)
-![Release Notes](./docs/images/openai-pr-release-notes.png)
-![Review Comments](./docs/images/openai-pr-review.png)
 
 ## ⚙️ Configuration Options
 | Input | Description | Default |
@@ -75,15 +70,7 @@ Example:
 
 > @openai Can you please review this block of code?
 
-### Screenshots
 
-![PR Summary](./docs/images/openai-pr-summary.png)
-
-![PR Release Notes](./docs/images/openai-pr-release-notes.png)
-
-![PR Review](./docs/images/openai-pr-review.png)
-
-![PR Conversation](./docs/images/openai-review-conversation.png)
 
 #### Environment variables
 
